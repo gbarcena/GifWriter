@@ -10,25 +10,25 @@ import UIKit
 import MobileCoreServices
 import ImageIO
 
-@objc protocol GIFWriterDelegate {
+@objc public protocol GIFWriterDelegate {
     func didStartWritingGIF(writer: GIFWriter)
     func didEndWritingGIF(writer: GIFWriter)
     
     optional func didWriteImage(writer: GIFWriter, frameIndex: Int, frameCount:Int)
 }
 
-class GIFWriter : NSObject {
+public class GIFWriter : NSObject {
     
-    var delegate : GIFWriterDelegate?
+    public var delegate : GIFWriterDelegate?
     private var destination : CGImageDestinationRef!
     private var images: [UIImage]
     
-    init(images:[UIImage])
+    public init(images:[UIImage])
     {
         self.images = images;
     }
     
-    func makeGIF(destinationURL:NSURL)
+    public func makeGIF(destinationURL:NSURL)
     {
         beginWrite(destinationURL)
         var frameCount = images.count
