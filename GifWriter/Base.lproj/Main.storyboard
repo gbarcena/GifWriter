@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbn-yr-fdc">
+                                <rect key="frame" x="269" y="28" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9GA-gF-qWn"/>
+                                    <constraint firstAttribute="width" constant="62" id="PSh-2k-1Za"/>
+                                    <constraint firstAttribute="height" constant="30" id="VHI-QH-vhH"/>
+                                    <constraint firstAttribute="width" constant="62" id="WvH-zj-ndS"/>
+                                </constraints>
+                                <state key="normal" title="Make Gif">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PSh-2k-1Za"/>
+                                        <exclude reference="VHI-QH-vhH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="PSh-2k-1Za"/>
+                                        <include reference="VHI-QH-vhH"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="makeGIFPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6fi-JM-Q5I"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rq8-BX-wGR" customClass="YLImageView">
+                                <rect key="frame" x="205" y="140" width="190" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="58G-yA-53V"/>
+                                    <constraint firstAttribute="width" constant="190" id="LZT-u3-3RS"/>
+                                    <constraint firstAttribute="width" constant="190" id="ii2-WA-9jl"/>
+                                    <constraint firstAttribute="height" constant="260" id="uEy-qh-69J"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LZT-u3-3RS"/>
+                                        <exclude reference="uEy-qh-69J"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="LZT-u3-3RS"/>
+                                        <include reference="uEy-qh-69J"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lBk-LX-KoP">
+                                <rect key="frame" x="197" y="119" width="206" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1.5" id="MG8-lN-ogx"/>
+                                    <constraint firstAttribute="width" constant="206" id="gNY-4l-ha6"/>
+                                    <constraint firstAttribute="width" constant="206" id="nX1-mS-30g"/>
+                                    <constraint firstAttribute="height" constant="2" id="uYb-vT-apI"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.1137254909" green="0.1921568662" blue="0.2588235438" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MG8-lN-ogx"/>
+                                        <exclude reference="nX1-mS-30g"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="MG8-lN-ogx"/>
+                                        <include reference="nX1-mS-30g"/>
+                                    </mask>
+                                </variation>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8d-Zz-gG1">
+                                <rect key="frame" x="224" y="77" width="171" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DEP-Tt-dJ2"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="FL4-YB-kr7"/>
+                                    <constraint firstAttribute="width" constant="49.5" id="qHC-94-Y4P"/>
+                                    <constraint firstAttribute="width" constant="171" id="tzQ-9Q-duF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FL4-YB-kr7"/>
+                                        <exclude reference="qHC-94-Y4P"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="FL4-YB-kr7"/>
+                                        <include reference="qHC-94-Y4P"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lBk-LX-KoP" secondAttribute="centerX" id="43L-6V-3cq"/>
+                            <constraint firstAttribute="centerX" secondItem="p8d-Zz-gG1" secondAttribute="centerX" constant="-9.5" id="C3z-1c-enQ"/>
+                            <constraint firstAttribute="centerX" secondItem="rq8-BX-wGR" secondAttribute="centerX" id="C9M-xG-GnU"/>
+                            <constraint firstAttribute="centerX" secondItem="Mbn-yr-fdc" secondAttribute="centerX" id="LZe-8a-4eh"/>
+                            <constraint firstItem="rq8-BX-wGR" firstAttribute="top" secondItem="lBk-LX-KoP" secondAttribute="bottom" constant="19" id="YEZ-7y-sxe"/>
+                            <constraint firstItem="lBk-LX-KoP" firstAttribute="top" secondItem="p8d-Zz-gG1" secondAttribute="bottom" constant="21" id="eEt-7S-bWP"/>
+                            <constraint firstItem="Mbn-yr-fdc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="tqg-qx-d1Y"/>
+                            <constraint firstItem="p8d-Zz-gG1" firstAttribute="top" secondItem="Mbn-yr-fdc" secondAttribute="bottom" constant="19" id="vvm-jw-Zgv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="rq8-BX-wGR" id="m0u-fU-JQk"/>
+                        <outlet property="label" destination="p8d-Zz-gG1" id="0hx-Ep-2zX"/>
+                        <outlet property="progressView" destination="lBk-LX-KoP" id="aiS-Ll-OmC"/>
+                        <outlet property="view" destination="kh9-bI-dsS" id="PLw-bb-M15"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="135"/>
+        </scene>
+    </scenes>
+</document>

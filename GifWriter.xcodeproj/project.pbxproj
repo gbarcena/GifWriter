@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC36F5C01B1614FF007DC1B0 /* GIFWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36F5BF1B1614FF007DC1B0 /* GIFWriter.swift */; };
+		ECB4C9DE19D9364700699604 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB4C9DD19D9364700699604 /* main.m */; };
+		ECB4C9E119D9364700699604 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB4C9E019D9364700699604 /* AppDelegate.m */; };
+		ECB4C9E419D9364700699604 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB4C9E319D9364700699604 /* ViewController.m */; };
+		ECB4C9E719D9364700699604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB4C9E519D9364700699604 /* Main.storyboard */; };
+		ECB4C9E919D9364700699604 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB4C9E819D9364700699604 /* Images.xcassets */; };
+		ECB4C9EC19D9364700699604 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB4C9EA19D9364700699604 /* LaunchScreen.xib */; };
+		ECB4C9F819D9364700699604 /* GifWriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB4C9F719D9364700699604 /* GifWriterTests.m */; };
+		ECB4CA0919D93CE800699604 /* ninenine_1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CA0219D93CE800699604 /* ninenine_1.png */; };
+		ECB4CA0A19D93CE800699604 /* ninenine_2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CA0319D93CE800699604 /* ninenine_2.png */; };
+		ECB4CA0B19D93CE800699604 /* ninenine_3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CA0419D93CE800699604 /* ninenine_3.png */; };
+		ECB4CA0C19D93CE800699604 /* ninenine_4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CA0519D93CE800699604 /* ninenine_4.png */; };
+		ECB4CA0D19D93CE800699604 /* ninenine_5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CA0619D93CE800699604 /* ninenine_5.png */; };
+		ECB4CA0E19D93CE800699604 /* ninenine_6.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CA0719D93CE800699604 /* ninenine_6.png */; };
+		ECB4CA0F19D93CE800699604 /* ninenine_7.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CA0819D93CE800699604 /* ninenine_7.png */; };
+		ECB4CA1919D9BA8500699604 /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB4CA1619D9BA8500699604 /* YLGIFImage.m */; };
+		ECB4CA1A19D9BA8500699604 /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB4CA1819D9BA8500699604 /* YLImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECB4C9F219D9364700699604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECB4C9D019D9364700699604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECB4C9D719D9364700699604;
+			remoteInfo = GifWriter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC36F5BF1B1614FF007DC1B0 /* GIFWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFWriter.swift; sourceTree = "<group>"; };
+		ECB4C9D819D9364700699604 /* GifWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB4C9DC19D9364700699604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB4C9DD19D9364700699604 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECB4C9DF19D9364700699604 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECB4C9E019D9364700699604 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECB4C9E219D9364700699604 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECB4C9E319D9364700699604 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECB4C9E619D9364700699604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECB4C9E819D9364700699604 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECB4C9EB19D9364700699604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ECB4C9F119D9364700699604 /* GifWriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifWriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB4C9F619D9364700699604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB4C9F719D9364700699604 /* GifWriterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifWriterTests.m; sourceTree = "<group>"; };
+		ECB4CA0219D93CE800699604 /* ninenine_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninenine_1.png; sourceTree = "<group>"; };
+		ECB4CA0319D93CE800699604 /* ninenine_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninenine_2.png; sourceTree = "<group>"; };
+		ECB4CA0419D93CE800699604 /* ninenine_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninenine_3.png; sourceTree = "<group>"; };
+		ECB4CA0519D93CE800699604 /* ninenine_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninenine_4.png; sourceTree = "<group>"; };
+		ECB4CA0619D93CE800699604 /* ninenine_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninenine_5.png; sourceTree = "<group>"; };
+		ECB4CA0719D93CE800699604 /* ninenine_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninenine_6.png; sourceTree = "<group>"; };
+		ECB4CA0819D93CE800699604 /* ninenine_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninenine_7.png; sourceTree = "<group>"; };
+		ECB4CA1519D9BA8500699604 /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
+		ECB4CA1619D9BA8500699604 /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
+		ECB4CA1719D9BA8500699604 /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
+		ECB4CA1819D9BA8500699604 /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		ECB4CA1B19D9BE0800699604 /* GifWriter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GifWriter-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECB4C9D519D9364700699604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB4C9EE19D9364700699604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC36F5BE1B1614FF007DC1B0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EC36F5BF1B1614FF007DC1B0 /* GIFWriter.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ECB4C9CF19D9364700699604 = {
+			isa = PBXGroup;
+			children = (
+				ECB4C9DA19D9364700699604 /* GifWriter */,
+				ECB4C9F419D9364700699604 /* GifWriterTests */,
+				ECB4C9D919D9364700699604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECB4C9D919D9364700699604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4C9D819D9364700699604 /* GifWriter.app */,
+				ECB4C9F119D9364700699604 /* GifWriterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECB4C9DA19D9364700699604 /* GifWriter */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4C9DF19D9364700699604 /* AppDelegate.h */,
+				ECB4C9E019D9364700699604 /* AppDelegate.m */,
+				ECB4CA1B19D9BE0800699604 /* GifWriter-Bridging-Header.h */,
+				ECB4C9E819D9364700699604 /* Images.xcassets */,
+				ECB4C9EA19D9364700699604 /* LaunchScreen.xib */,
+				ECB4C9E519D9364700699604 /* Main.storyboard */,
+				ECB4CA0119D93CE800699604 /* ninenine */,
+				EC36F5BE1B1614FF007DC1B0 /* Source */,
+				ECB4C9DB19D9364700699604 /* Supporting Files */,
+				ECB4C9E219D9364700699604 /* ViewController.h */,
+				ECB4C9E319D9364700699604 /* ViewController.m */,
+				ECB4CA1419D9BA8500699604 /* YLGIFImage */,
+			);
+			path = GifWriter;
+			sourceTree = "<group>";
+		};
+		ECB4C9DB19D9364700699604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4C9DC19D9364700699604 /* Info.plist */,
+				ECB4C9DD19D9364700699604 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECB4C9F419D9364700699604 /* GifWriterTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4C9F719D9364700699604 /* GifWriterTests.m */,
+				ECB4C9F519D9364700699604 /* Supporting Files */,
+			);
+			path = GifWriterTests;
+			sourceTree = "<group>";
+		};
+		ECB4C9F519D9364700699604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4C9F619D9364700699604 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECB4CA0119D93CE800699604 /* ninenine */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4CA0219D93CE800699604 /* ninenine_1.png */,
+				ECB4CA0319D93CE800699604 /* ninenine_2.png */,
+				ECB4CA0419D93CE800699604 /* ninenine_3.png */,
+				ECB4CA0519D93CE800699604 /* ninenine_4.png */,
+				ECB4CA0619D93CE800699604 /* ninenine_5.png */,
+				ECB4CA0719D93CE800699604 /* ninenine_6.png */,
+				ECB4CA0819D93CE800699604 /* ninenine_7.png */,
+			);
+			path = ninenine;
+			sourceTree = "<group>";
+		};
+		ECB4CA1419D9BA8500699604 /* YLGIFImage */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4CA1519D9BA8500699604 /* YLGIFImage.h */,
+				ECB4CA1619D9BA8500699604 /* YLGIFImage.m */,
+				ECB4CA1719D9BA8500699604 /* YLImageView.h */,
+				ECB4CA1819D9BA8500699604 /* YLImageView.m */,
+			);
+			path = YLGIFImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECB4C9D719D9364700699604 /* GifWriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECB4C9FB19D9364700699604 /* Build configuration list for PBXNativeTarget "GifWriter" */;
+			buildPhases = (
+				ECB4C9D419D9364700699604 /* Sources */,
+				ECB4C9D519D9364700699604 /* Frameworks */,
+				ECB4C9D619D9364700699604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GifWriter;
+			productName = GifWriter;
+			productReference = ECB4C9D819D9364700699604 /* GifWriter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECB4C9F019D9364700699604 /* GifWriterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECB4C9FE19D9364700699604 /* Build configuration list for PBXNativeTarget "GifWriterTests" */;
+			buildPhases = (
+				ECB4C9ED19D9364700699604 /* Sources */,
+				ECB4C9EE19D9364700699604 /* Frameworks */,
+				ECB4C9EF19D9364700699604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECB4C9F319D9364700699604 /* PBXTargetDependency */,
+			);
+			name = GifWriterTests;
+			productName = GifWriterTests;
+			productReference = ECB4C9F119D9364700699604 /* GifWriterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECB4C9D019D9364700699604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = GDB;
+				TargetAttributes = {
+					ECB4C9D719D9364700699604 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					ECB4C9F019D9364700699604 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = ECB4C9D719D9364700699604;
+					};
+				};
+			};
+			buildConfigurationList = ECB4C9D319D9364700699604 /* Build configuration list for PBXProject "GifWriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECB4C9CF19D9364700699604;
+			productRefGroup = ECB4C9D919D9364700699604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECB4C9D719D9364700699604 /* GifWriter */,
+				ECB4C9F019D9364700699604 /* GifWriterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECB4C9D619D9364700699604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB4C9E719D9364700699604 /* Main.storyboard in Resources */,
+				ECB4CA0E19D93CE800699604 /* ninenine_6.png in Resources */,
+				ECB4CA0D19D93CE800699604 /* ninenine_5.png in Resources */,
+				ECB4CA0F19D93CE800699604 /* ninenine_7.png in Resources */,
+				ECB4CA0B19D93CE800699604 /* ninenine_3.png in Resources */,
+				ECB4CA0919D93CE800699604 /* ninenine_1.png in Resources */,
+				ECB4C9EC19D9364700699604 /* LaunchScreen.xib in Resources */,
+				ECB4CA0C19D93CE800699604 /* ninenine_4.png in Resources */,
+				ECB4CA0A19D93CE800699604 /* ninenine_2.png in Resources */,
+				ECB4C9E919D9364700699604 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB4C9EF19D9364700699604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECB4C9D419D9364700699604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB4CA1A19D9BA8500699604 /* YLImageView.m in Sources */,
+				ECB4C9E419D9364700699604 /* ViewController.m in Sources */,
+				ECB4C9E119D9364700699604 /* AppDelegate.m in Sources */,
+				EC36F5C01B1614FF007DC1B0 /* GIFWriter.swift in Sources */,
+				ECB4C9DE19D9364700699604 /* main.m in Sources */,
+				ECB4CA1919D9BA8500699604 /* YLGIFImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB4C9ED19D9364700699604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB4C9F819D9364700699604 /* GifWriterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECB4C9F319D9364700699604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECB4C9D719D9364700699604 /* GifWriter */;
+			targetProxy = ECB4C9F219D9364700699604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECB4C9E519D9364700699604 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB4C9E619D9364700699604 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECB4C9EA19D9364700699604 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB4C9EB19D9364700699604 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECB4C9F919D9364700699604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECB4C9FA19D9364700699604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECB4C9FC19D9364700699604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GifWriter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifWriter/GifWriter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECB4C9FD19D9364700699604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GifWriter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifWriter/GifWriter-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		ECB4C9FF19D9364700699604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GifWriterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifWriter.app/GifWriter";
+			};
+			name = Debug;
+		};
+		ECB4CA0019D9364700699604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GifWriterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifWriter.app/GifWriter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECB4C9D319D9364700699604 /* Build configuration list for PBXProject "GifWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB4C9F919D9364700699604 /* Debug */,
+				ECB4C9FA19D9364700699604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECB4C9FB19D9364700699604 /* Build configuration list for PBXNativeTarget "GifWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB4C9FC19D9364700699604 /* Debug */,
+				ECB4C9FD19D9364700699604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECB4C9FE19D9364700699604 /* Build configuration list for PBXNativeTarget "GifWriterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB4C9FF19D9364700699604 /* Debug */,
+				ECB4CA0019D9364700699604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECB4C9D019D9364700699604 /* Project object */;
+}
