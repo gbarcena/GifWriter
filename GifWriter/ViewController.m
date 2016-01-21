@@ -15,7 +15,7 @@
 #import "YLImageView.h"
 #import "GifWriter-Swift.h"
 
-@interface ViewController ()  <GIFWriterDelegate>
+@interface ViewController ()
 @property (weak, nonatomic) IBOutlet YLImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -35,15 +35,23 @@
         [self.images addObject:[UIImage imageNamed:imageName]];
     }
     
-    self.gifWriter = [[GIFWriter alloc] initWithImages:self.images];
-    self.gifWriter.delegate = self;
+    self.gifWriter = [[GIFWriter alloc] initWithImages:self.images frameDelay:0.25];
 }
 
 -(IBAction)makeGIFPressed:(id)sender
 {
+    self.label.text = @"Start Writing";
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        __weak typeof(self) weakSelf = self;
+        [self.gifWriter setProgressBlock:^(NSInteger frameIndex, NSInteger frameCount) {
+            weakSelf.progressView.progress = (float)frameIndex/frameCount;
+        }];
+        
         [self.gifWriter makeGIF:[self fileLocation]];
-        self.imageView.image = [YLGIFImage imageWithContentsOfFile:[self filePath]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.label.text = @"End Writing";
+            self.imageView.image = [YLGIFImage imageWithContentsOfFile:[self filePath]];
+        });
     });
 }
 
@@ -69,23 +77,6 @@
     NSString *filePath = [self filePath];
     NSURL *fileURL = [NSURL fileURLWithPath:filePath];
     return fileURL;
-}
-
-#pragma mark - GIFWriterDelegate Methods
-
--(void)didStartWritingGIF:(GIFWriter * __nonnull)writer
-{
-    self.label.text = @"Start Writing";
-}
-
--(void)didEndWritingGIF:(GIFWriter * __nonnull)writer
-{
-    self.label.text = @"End Writing";
-}
-
--(void)didWriteImage:(GIFWriter * __nonnull)writer frameIndex:(NSInteger)frameIndex frameCount:(NSInteger)frameCount
-{
-    self.progressView.progress = (float)frameIndex/frameCount;
 }
 
 @end
