@@ -10,16 +10,16 @@ import UIKit
 import MobileCoreServices
 import ImageIO
 
-public class GIFWriter: NSObject {
+open class GIFWriter: NSObject {
     
-    private var destination: CGImageDestinationRef!
-    private var images: [CGImage]
-    private var frameDelay: Double
+    fileprivate var destination: CGImageDestination!
+    fileprivate var images: [CGImage]
+    fileprivate var frameDelay: Double
     
-    public var progressBlock: ((frameIndex: Int, frameCount: Int)->Void)?
+    open var progressBlock: ((_ frameIndex: Int, _ frameCount: Int)->Void)?
     
     public init?(images: [UIImage], frameDelay: Double = 0.25) {
-        let cgImages = images.flatMap({ $0.CGImage })
+        let cgImages = images.flatMap({ $0.cgImage })
         guard images.count == cgImages.count else {
             self.images = []
             self.frameDelay = frameDelay
@@ -31,44 +31,44 @@ public class GIFWriter: NSObject {
         super.init()
     }
     
-    public func makeGIF(destinationURL: NSURL) {
+    open func makeGIF(_ destinationURL: URL) {
         beginWrite(destinationURL)
         let frameCount = images.count
         
-        for (index, image) in images.enumerate() {
+        for (index, image) in images.enumerated() {
             writeImage(image, frameDelay: frameDelay)
-            dispatch_async(dispatch_get_main_queue()) {
-                self.progressBlock?(frameIndex:index+1, frameCount:frameCount)
+            DispatchQueue.main.async {
+                self.progressBlock?(index+1, frameCount)
             }
         }
         
         endWrite()
     }
     
-    private func beginWrite(destinationURL: NSURL) {
+    fileprivate func beginWrite(_ destinationURL: URL) {
         let fileProperties = GIFWriter.gifProperties()
-        destination = CGImageDestinationCreateWithURL(destinationURL, kUTTypeGIF, Int(images.count), nil)
+        destination = CGImageDestinationCreateWithURL(destinationURL as CFURL, kUTTypeGIF, Int(images.count), nil)
         CGImageDestinationSetProperties(destination, fileProperties)
     }
     
-    private func writeImage(image: CGImage, frameDelay: NSTimeInterval) {
+    fileprivate func writeImage(_ image: CGImage, frameDelay: TimeInterval) {
         let frameProperties = GIFWriter.frameProperties(frameDelay)
         CGImageDestinationAddImage(destination, image, frameProperties)
     }
     
-    private func endWrite() {
+    fileprivate func endWrite() {
         CGImageDestinationFinalize(destination)
     }
     
     // Mark: Class Helpers
     
-    private class func frameProperties(frameDelay: NSTimeInterval) -> CFDictionary {
-        let dict: CFDictionary = [kCGImagePropertyGIFDelayTime as String: frameDelay]
-        return [kCGImagePropertyGIFDictionary as String :dict]
+    fileprivate class func frameProperties(_ frameDelay: TimeInterval) -> CFDictionary {
+        let dict = [kCGImagePropertyGIFDelayTime as String: frameDelay]
+        return [kCGImagePropertyGIFDictionary as String: dict] as CFDictionary
     }
     
-    private class func gifProperties() -> CFDictionary {
-        let dict: CFDictionary = [kCGImagePropertyGIFLoopCount as String: 0]
-        return [kCGImagePropertyGIFDictionary as String:dict]
+    fileprivate class func gifProperties() -> CFDictionary {
+        let dict = [kCGImagePropertyGIFLoopCount as String: 0]
+        return [kCGImagePropertyGIFDictionary as String: dict] as CFDictionary
     }
 }
